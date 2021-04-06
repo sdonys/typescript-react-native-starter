@@ -5,6 +5,7 @@ import RNBootSplash from 'react-native-bootsplash';
 import Icon from 'react-native-easy-icon';
 import Home from 'src/containers/Home';
 import Settings from 'src/containers/Settings';
+import MapScreen from 'src/containers/MapScreen';
 import {sleep} from './utils/async';
 
 export type AppTabParamList = {
@@ -30,10 +31,10 @@ const App = () => {
   return (
     <Tab.Navigator initialRouteName="home">
       <Tab.Screen
-        name="home"
+        name="Location Manager"
         component={Home}
         options={{
-          tabBarLabel: t('home'),
+          tabBarLabel: t('Location'),
           tabBarIcon: ({focused, color, size}) => (
             <Icon
               name={focused ? 'home' : 'home-outline'}
@@ -45,7 +46,17 @@ const App = () => {
         }}
       />
       <Tab.Screen
-        name="settings"
+        name="Map"
+        component={MapScreen}
+        options={{
+          tabBarLabel: t('map'),
+          tabBarIcon: ({focused, color, size}) => (
+            <Icon name={focused ? 'map' : 'map-o'} type="font-awesome" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Settings"
         component={Settings}
         options={{
           tabBarLabel: t('settings'),

@@ -3,16 +3,16 @@ import {useTranslation} from 'react-i18next';
 import {StyleSheet, Text, View} from 'react-native';
 import Colors from 'src/constants/colors';
 
-function Home() {
+function MapScreen() {
   const {t} = useTranslation();
   return (
     <View style={styles.container}>
-      <Text>{t('Current location manager')}</Text>
+      <Text>{t('showing map')}</Text>
     </View>
   );
 }
 
-export default memo(Home);
+export default memo(MapScreen);
 
 const styles = StyleSheet.create({
   container: {

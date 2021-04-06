@@ -2,8 +2,8 @@ import {render} from '@testing-library/react-native';
 import React from 'react';
 import 'react-native';
 import {Provider} from 'react-redux';
-import Home from 'src/containers/Home';
 import {store} from 'src/store';
+import Home from 'src/containers/Home';
 
 describe('Home', () => {
   jest.useFakeTimers();
