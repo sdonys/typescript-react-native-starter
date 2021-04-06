@@ -58,6 +58,10 @@
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
 	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>BootSplash</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -72,5 +76,11 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSLocationAlwaysUsageDescription</key>
+            <string>Your location is required to use the app</string>
+        <key>NSLocationAlwaysUsageDescription</key>
+            <string>Your location is required to use the app</string>
+        <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+            <string>Your location is required to use the app</string>
 </dict>
 </plist>

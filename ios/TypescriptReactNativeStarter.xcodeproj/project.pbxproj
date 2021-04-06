@@ -21,6 +21,7 @@
 		D278161C8AA2527CC7998846 /* libPods-TypescriptReactNativeStarter-TypescriptReactNativeStarterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80B7B5A5F9C9CB59438FC4 /* libPods-TypescriptReactNativeStarter-TypescriptReactNativeStarterTests.a */; };
 		E20124FF10CF8BC92DCC7905 /* libPods-TypescriptReactNativeStarter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9CD9D7B78102EA24A4D6CB /* libPods-TypescriptReactNativeStarter.a */; };
 		E3AB0346D5DDA054A0D2F252 /* libPods-TypescriptReactNativeStarter-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF67D445400C1D481C45053 /* libPods-TypescriptReactNativeStarter-tvOSTests.a */; };
+		F45714E7261C30FB0072D215 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45714E6261C30FB0072D215 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,8 @@
 		ED624D0AC14643F6A219C253 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		EF9CD9D7B78102EA24A4D6CB /* libPods-TypescriptReactNativeStarter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TypescriptReactNativeStarter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FD5FC4F26F4D05AD5544D8 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		F45714E5261C30FA0072D215 /* TypescriptReactNativeStarter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TypescriptReactNativeStarter-Bridging-Header.h"; sourceTree = "<group>"; };
+		F45714E6261C30FB0072D215 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		F64CE97E3FF44CD1BA579759 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +219,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				F45714E6261C30FB0072D215 /* File.swift */,
 				13B07FAE1A68108700A75B9A /* TypescriptReactNativeStarter */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* TypescriptReactNativeStarterTests */,
@@ -223,6 +227,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				0C235E62076294ACC839B231 /* Pods */,
 				71DBEA3096404853AD1CFB35 /* Resources */,
+				F45714E5261C30FA0072D215 /* TypescriptReactNativeStarter-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -336,8 +341,8 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = QRYL9U38FB;
-						LastSwiftMigration = 1120;
+						DevelopmentTeam = 254UFCTA5B;
+						LastSwiftMigration = 1240;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -677,6 +682,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				F45714E7261C30FB0072D215 /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -718,6 +724,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D8706645DFB06A6045433B8 /* Pods-TypescriptReactNativeStarter-TypescriptReactNativeStarterTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -741,6 +748,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5987C19DF661C73C4E510C5E /* Pods-TypescriptReactNativeStarter-TypescriptReactNativeStarterTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = TypescriptReactNativeStarterTests/Info.plist;
@@ -764,7 +772,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QRYL9U38FB;
+				DEVELOPMENT_TEAM = 254UFCTA5B;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TypescriptReactNativeStarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -775,6 +783,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TypescriptReactNativeStarter;
+				SWIFT_OBJC_BRIDGING_HEADER = "TypescriptReactNativeStarter-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -798,6 +807,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TypescriptReactNativeStarter;
+				SWIFT_OBJC_BRIDGING_HEADER = "TypescriptReactNativeStarter-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
