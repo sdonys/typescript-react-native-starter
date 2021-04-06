@@ -1,24 +1,22 @@
 import React, {memo} from 'react';
-import {useTranslation} from 'react-i18next';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import Colors from 'src/constants/colors';
+import CurrentLocationComponent from 'src/components/CurrentLocationComponent';
 
 function Home() {
-  const {t} = useTranslation();
   return (
     <View style={styles.container}>
-      <Text>{t('Current location manager')}</Text>
+      <CurrentLocationComponent />
     </View>
   );
 }
 
 export default memo(Home);
-
 const styles = StyleSheet.create({
   container: {
+    marginTop: '20%',
+    marginHorizontal: '5%',
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: Colors.aliceBlue,
   },
 });

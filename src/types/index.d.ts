@@ -6,3 +6,16 @@ export interface User {
   phone: string;
   name: string;
 }
+
+interface HistoryLocations {
+  _id: string;
+  localisation: string;
+  date: string;
+}
+
+interface LocationsModel {
+  longitude: number;
+  latitude: number;
+  date: string;
+  formattedAddress: string;
+}
